@@ -8,10 +8,10 @@ class Cell:
         self.selected = False
     
     def set_cell_value(self, value):
-        pass
+        self.value = value
     
     def set_sketched_value(self, value):
-        pass
+        self.sketched_value = value
     
     def draw(self):
         pass
