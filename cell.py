@@ -26,7 +26,7 @@ class Cell:
     """
     Eventually, this will probably have to hook into pygame. For now, I am 
     just going to have it print the cell's current value inside brackets '[]'.
-    It will also print the current state of selected and sketched values.
+    It will also print the row/col values, sketched value, selected value, and is editable value.
     This is primarily just for debugging purposes right now.
     """
     def draw(self):
@@ -34,3 +34,4 @@ class Cell:
         print(f"Sketched Value: {self.sketched_value}")
         print(f"Selected Value: {self.selected}")
         print(f"Row, Col: ({self.row}, {self.col})")
+        print(f"Is Editable: {self.is_editable}")
