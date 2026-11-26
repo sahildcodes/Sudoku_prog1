@@ -1,6 +1,11 @@
 class Cell:
     def __init__(self, value, row, col, screen):
-        pass
+        self.value = value
+        self.col = col
+        self.row = row
+        self.screen = screen
+        self.sketched_value = ""
+        self.selected = False
     
     def set_cell_value(self, value):
         pass
@@ -10,4 +15,3 @@ class Cell:
     
     def draw(self):
         pass
-    
