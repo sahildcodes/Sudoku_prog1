@@ -26,3 +26,4 @@ class Cell:
         print(f"[{self.value}]")
         print(f"Sketched Value: {self.sketched_value}")
         print(f"Selected Value: {self.selected}")
+        print(f"Row, Col: ({self.row}, {self.col})")
