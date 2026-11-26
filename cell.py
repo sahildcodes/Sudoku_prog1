@@ -1,9 +1,10 @@
 class Cell:
-    def __init__(self, value, row, col, screen):
+    def __init__(self, value, row, col, is_editable, screen):
         self.value = value
         self.col = col
         self.row = row
         self.screen = screen
+        self.is_editable = is_editable
         self.sketched_value = ""
         self.selected = False
     
@@ -15,6 +16,12 @@ class Cell:
         
     def set_selected(self, value):
         self.selected = value
+        
+    def set_is_editable(self, value):
+        self.is_editable = value
+        
+    def get_is_editable(self, value):
+        return self.is_editable
     
     """
     Eventually, this will probably have to hook into pygame. For now, I am 
