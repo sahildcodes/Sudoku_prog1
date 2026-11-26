@@ -12,6 +12,9 @@ class Cell:
     
     def set_sketched_value(self, value):
         self.sketched_value = value
+        
+    def set_selected(self, value):
+        self.selected = value
     
     def draw(self):
         pass
